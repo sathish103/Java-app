@@ -13,10 +13,10 @@ spec:
       labels:
         app: java-app
     spec:
-      serviceAccountName: java-app-sa
+      serviceAccountName: secret-reader
       containers:
         - name: java-app
-          image: your-dockerhub-username/java-app:latest
+          image: 605134446430.dkr.ecr.us-east-2.amazonaws.com/java-app:1.0
           ports:
             - containerPort: 8080
           env:
