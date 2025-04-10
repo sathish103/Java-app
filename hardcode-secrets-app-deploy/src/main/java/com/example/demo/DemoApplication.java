@@ -15,7 +15,7 @@ public class DemoApplication {
     class HelloController {
         @GetMapping("/")
         public String hello() {
-            return "Hello from Spring Boot with AWS RDS and Secrets Manager!";
+            return "Hello from Spring Boot with AWS RDS and Secrets Manager Hardcoding!";
         }
     }
 }
