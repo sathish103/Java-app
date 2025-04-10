@@ -14,4 +14,10 @@ EOF
 sudo chmod +x /etc/profile.d/maven.sh
 source /etc/profile.d/maven.sh
 mvn -v
-mvn clean package
+mvn clean packagekubectl logs java-app-54f85fbc9-dgm24
+
+
+
+
+jar tf demo-0.0.1-SNAPSHOT.jar | grep DemoApplication
+

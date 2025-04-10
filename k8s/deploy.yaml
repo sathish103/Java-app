@@ -16,7 +16,7 @@ spec:
       serviceAccountName: secret-reader
       containers:
         - name: java-app
-          image: 605134446430.dkr.ecr.us-east-2.amazonaws.com/java-app:1.0
+          image: 605134446430.dkr.ecr.us-east-2.amazonaws.com/java-db:1.7
           ports:
             - containerPort: 8080
           env:

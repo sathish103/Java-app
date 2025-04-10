@@ -1,0 +1,17 @@
+{
+    "Version": "2012-10-17",
+    "Statement": [
+        {
+            "Effect": "Allow",
+            "Principal": {
+                "Federated": "arn:aws:iam::605134446430:oidc-provider/oidc.eks.us-east-2.amazonaws.com/id/14F51392ACC5395FB43CA0EE564B9494"
+            },
+            "Action": "sts:AssumeRoleWithWebIdentity",
+            "Condition": {
+                "StringEquals": {
+                    "oidc.eks.us-east-2.amazonaws.com/id/14F51392ACC5395FB43CA0EE564B9494:sub": "system:serviceaccount:default:secret-reader"
+                }
+            }
+        }
+    ]
+}

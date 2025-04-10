@@ -1,0 +1,15 @@
+
+sudo rpm -Uvh https://repo.mysql.com/mysql80-community-release-el9-1.noarch.rpm
+
+sudo dnf clean all
+sudo dnf makecache
+
+sudo rpm --import https://repo.mysql.com/RPM-GPG-KEY-mysql-2022
+
+sudo dnf install mysql --nogpgcheck -y
+
+mysql --version
+
+mysql -h <RDS-endpoint> -u <username> -p<password>
+
+mysql -h my-database.cnq00iqs2pdy.us-east-2.rds.amazonaws.com -u admin -p
